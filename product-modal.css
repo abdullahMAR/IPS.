@@ -1,0 +1,230 @@
+/* أنماط البطاقات التعريفية للمنتجات */
+
+/* خلفية معتمة عند فتح البطاقة */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* تصميم البطاقة التعريفية */
+.product-modal {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+}
+
+.modal-overlay.active .product-modal {
+    transform: translateY(0);
+}
+
+/* رأس البطاقة */
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.modal-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* محتوى البطاقة */
+.modal-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        flex-direction: row;
+    }
+}
+
+/* صورة المنتج */
+.modal-image {
+    flex: 1;
+    min-width: 200px;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.modal-image:hover img {
+    transform: scale(1.05);
+}
+
+/* وصف المنتج */
+.modal-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-description h3 {
+    color: var(--primary);
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.modal-description p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+/* قائمة المميزات */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features-list li i {
+    color: var(--primary);
+}
+
+/* أزرار البطاقة */
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    background-color: #0069b0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 123, 203, 0.3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.secondary-btn:hover {
+    background-color: rgba(0, 123, 203, 0.1);
+    transform: translateY(-3px);
+}
+
+/* تأثيرات حركية */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content > * {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.modal-image {
+    animation-delay: 0.1s;
+}
+
+.modal-description {
+    animation-delay: 0.3s;
+}
+
+.modal-actions {
+    animation-delay: 0.5s;
+}
+
+/* دعم اللغات المتعددة */
+html[dir="ltr"] .modal-actions {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .features-list li i {
+    margin-left: 10px;
+}
+
+html[dir="ltr"] .features-list li i {
+    margin-right: 10px;
+}

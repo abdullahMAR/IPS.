@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأنظمة الاحترافية المتكاملة - IPS</title>
+    <!-- ربط ملفات CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product-modal.css" />
+    <!-- خط Montserrat من Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- مكتبة Font Awesome للأيقونات -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- تم حذف رابط favicon لتجنب خطأ 404 -->
+  </head>
+  <body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <!-- شعار الشركة الجديد -->
+          <img src="images/ips-logo.svg" alt="IPS Logo" class="logo-image" />
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">الرئيسية</a>
+          <a href="#services" class="nav-link">الخدمات</a>
+          <a href="#about" class="nav-link">من نحن</a>
+          <a href="#projects" class="nav-link">المشاريع</a>
+          <a href="#contact" class="nav-link">تواصل معنا</a>
+          <button class="lang-btn" id="langBtn">
+            <i class="fas fa-globe"></i>
+            <span>العربية</span>
+          </button>
+        </div>
+        <div class="menu-btn" id="menuBtn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="primary-color">الأنظمة الاحترافية المتكاملة</h1>
+          <h2>IPS - Integrated Professional Systems</h2>
+          <p class="slogan accent-color">Protect what matters most</p>
+          <p class="description">
+            نحن في شركة IPS نعتبر بكوننا رائدين في مجال تقديم حلول الأمان
+            والتكنولوجيا المتطورة، نلتزم بتقديم خدمات مبتكرة تلبي احتياجات
+            عملائنا مع التركيز على أعلى معايير الجودة والكفاءة
+          </p>
+          <button class="cta-btn">
+            <span>اطلب عرض سعر</span>
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="images\iconIPS.jpg.jpeg"
+            alt="IPS Security Systems"
+            class="main-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats">
+      <div class="container">
+        <h2 class="section-title">إحصائياتنا</h2>
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number accent-color">19+</div>
+            <div class="stat-label">سنة خبرة</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number accent-color">500+</div>
+            <div class="stat-label">عميل راضي</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number accent-color">1000+</div>
+            <div class="stat-label">مشروع منجز</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number accent-color">24/7</div>
+            <div class="stat-label">دعم فني</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title primary-color">خدماتنا</h2>
+        <p class="section-subtitle">نقدم مجموعة شاملة من الخدمات المتخصصة</p>
+
+        <div class="services-grid">
+          <!-- التيار الضعيف -->
+          <div class="service-card">
+            <div class="card-header">
+              <h3 class="card-title primary-color">التيار الضعيف</h3>
+              <p class="card-description">
+                حلول متكاملة لأنظمة الأمان والاتصالات
+              </p>
+            </div>
+            <div class="card-content">
+              <!-- تم إضافة data-service لكل خدمة للتفاعل مع البطاقات التعريفية -->
+              <div class="service-item" data-service="cameras">
+                <i class="fas fa-video primary-color"></i>
+                <span>كاميرات المراقبة</span>
+              </div>
+              <div class="service-item" data-service="burglarAlarm">
+                <i class="fas fa-shield-alt primary-color"></i>
+                <span>إنذار السرقة</span>
+              </div>
+              <div class="service-item" data-service="fireAlarm">
+                <i class="fas fa-fire primary-color"></i>
+                <span>إنذار الحريق</span>
+              </div>
+              <div class="service-item" data-service="pbx">
+                <i class="fas fa-phone primary-color"></i>
+                <span>المقاسم الهاتفية الإلكترونية (PBX)</span>
+              </div>
+              <div class="service-item" data-service="networks">
+                <i class="fas fa-network-wired primary-color"></i>
+                <span>شبكات الكمبيوتر</span>
+              </div>
+              <div class="service-item" data-service="power">
+                <i class="fas fa-bolt primary-color"></i>
+                <span>الطاقة</span>
+              </div>
+            </div>
+            <div class="service-image">
+              <img src="images/7uz6y2LDMmu4.jpg" alt="Low Current Systems" />
+            </div>
+          </div>
+
+          <!-- الأمن الصناعي وتجهيزات الدفاع المدني -->
+          <div class="service-card">
+            <div class="card-header">
+              <h3 class="card-title primary-color">
+                الأمن الصناعي وتجهيزات الدفاع المدني
+              </h3>
+              <p class="card-description">معدات السلامة والحماية المهنية</p>
+            </div>
+            <div class="card-content">
+              <div class="service-item" data-service="fireFighting">
+                <i class="fas fa-fire-extinguisher primary-color"></i>
+                <span>أجهزة وأنظمة إطفاء الحريق</span>
+              </div>
+              <div class="service-item" data-service="assaultSuits">
+                <i class="fas fa-tshirt primary-color"></i>
+                <span>بدلات الاقتحام والاقتراب</span>
+              </div>
+              <div class="service-item" data-service="reflectiveVests">
+                <i class="fas fa-exclamation-triangle primary-color"></i>
+                <span>ستر عاكسة</span>
+              </div>
+              <div class="service-item" data-service="safetyHelmets">
+                <i class="fas fa-hard-hat primary-color"></i>
+                <span>خوذ وأحذية سيفتي</span>
+              </div>
+              <div class="service-item" data-service="civilDefense">
+                <i class="fas fa-shield-alt primary-color"></i>
+                <span>تجهيزات الدفاع المدني الكاملة</span>
+              </div>
+            </div>
+            <div class="service-image">
+              <img src="images/SD4aK6ZkCPQu.jpg" alt="Industrial Security" />
+            </div>
+          </div>
+
+          <!-- التكييف والتبريد -->
+          <div class="service-card">
+            <div class="card-header">
+              <h3 class="card-title primary-color">التكييف والتبريد</h3>
+              <p class="card-description">أنظمة التكييف والتبريد المتطورة</p>
+            </div>
+            <div class="card-content">
+              <div class="service-item" data-service="supply">
+                <i class="fas fa-snowflake primary-color"></i>
+                <span>توريد أنظمة التكييف</span>
+              </div>
+              <div class="service-item" data-service="installation">
+                <i class="fas fa-snowflake primary-color"></i>
+                <span>تركيب أنظمة التكييف</span>
+              </div>
+              <div class="service-item" data-service="maintenance">
+                <i class="fas fa-snowflake primary-color"></i>
+                <span>صيانة أنظمة التكييف</span>
+              </div>
+            </div>
+            <div class="service-image">
+              <img src="images/MpoeuogUC4Da.jpg" alt="HVAC Systems" />
+            </div>
+          </div>
+
+          <!-- الأعمال الكهربائية -->
+          <div class="service-card">
+            <div class="card-header">
+              <h3 class="card-title primary-color">الأعمال الكهربائية</h3>
+              <p class="card-description">خدمات كهربائية شاملة ومتخصصة</p>
+            </div>
+            <div class="card-content">
+              <div class="service-item" data-service="residential">
+                <i class="fas fa-home primary-color"></i>
+                <span>الكهرباء المنزلية</span>
+              </div>
+              <div class="service-item" data-service="industrial">
+                <i class="fas fa-industry primary-color"></i>
+                <span>الكهرباء الصناعية</span>
+              </div>
+              <div class="service-item" data-service="complete">
+                <i class="fas fa-bolt primary-color"></i>
+                <span>التوريد والتركيب والتنفيذ الكامل</span>
+              </div>
+            </div>
+            <div class="service-image">
+              <img src="images/asZDFsA0McOA.jpg" alt="Electrical Works" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title primary-color">من نحن</h2>
+        <p class="section-subtitle">شركة رائدة في مجال الأنظمة المتكاملة</p>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img src="images/3kPT0wbuIybW.jpg" alt="About IPS" />
+          </div>
+          <div class="about-text">
+            <p class="about-description">
+              تأسست شركة الأنظمة الاحترافية المتكاملة (IPS) في عام 2006، وهي
+              شركة رائدة في مجال تقديم حلول الأمان والتكنولوجيا المتطورة. نحن
+              نلتزم بتقديم خدمات مبتكرة تلبي احتياجات عملائنا مع التركيز على
+              أعلى معايير الجودة والكفاءة.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <h3 class="about-card-title primary-color">رؤيتنا</h3>
+            <p class="about-card-text">
+              أن نكون الشركة الرائدة في المنطقة في مجال الأنظمة المتكاملة
+              والحلول التكنولوجية المتقدمة.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-card-title primary-color">رسالتنا</h3>
+            <p class="about-card-text">
+              تقديم حلول متكاملة ومبتكرة في مجال الأمان والتكنولوجيا مع ضمان
+              أعلى مستويات الجودة والخدمة.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-card-title primary-color">قيمنا</h3>
+            <div class="values">
+              <span class="value-badge">الجودة</span>
+              <span class="value-badge">الابتكار</span>
+              <span class="value-badge">الثقة</span>
+              <span class="value-badge">الالتزام</span>
+              <span class="value-badge">التميز</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title primary-color">المشاريع</h2>
+        <p class="section-subtitle">معرض لأعمالنا ومشاريعنا المنجزة</p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="images/YzJTmS7to3Wm.jpg" alt="Project 1" />
+            <div class="project-overlay">
+              <h3>مشروع أنظمة الأمان</h3>
+              <p>تركيب أنظمة مراقبة متطورة</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/C2EOykc9giYw.jpg" alt="Project 2" />
+            <div class="project-overlay">
+              <h3>مشروع الشبكات</h3>
+              <p>تصميم وتنفيذ شبكات متكاملة</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/bh5Vh54dvcp7.jpg" alt="Project 3" />
+            <div class="project-overlay">
+              <h3>مشروع التكييف</h3>
+              <p>تركيب أنظمة تكييف مركزية</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-placeholder">
+          <p>
+            المزيد من المشاريع قريباً - يمكنكم التواصل معنا لمزيد من المعلومات
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title primary-color">تواصل معنا</h2>
+        <p class="section-subtitle">نحن هنا لخدمتكم</p>
+
+        <div class="contact-container">
+          <!-- نموذج التواصل -->
+          <div class="contact-form-container">
+            <h3>تواصل معنا</h3>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" placeholder="الاسم" />
+              </div>
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="البريد الإلكتروني"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" placeholder="رقم الهاتف" />
+              </div>
+              <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea
+                  id="message"
+                  rows="4"
+                  placeholder="الرسالة"
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">إرسال</button>
+            </form>
+          </div>
+
+          <!-- معلومات التواصل -->
+          <div class="contact-info">
+            <div class="info-card">
+              <i class="fas fa-phone primary-color"></i>
+              <div>
+                <h4>الهاتف</h4>
+                <p>+963 11 123 4567</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-envelope primary-color"></i>
+              <div>
+                <h4>البريد الإلكتروني</h4>
+                <p>info@ips-syria.com</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt primary-color"></i>
+              <div>
+                <h4>العنوان</h4>
+                <p>دمشق، سوريا</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-clock primary-color"></i>
+              <div>
+                <h4>ساعات العمل</h4>
+                <p>الأحد - الخميس: 8:00 - 17:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خريطة الموقع -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106456.51594432085!2d36.25255489726563!3d33.50348000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2sDamascus%2C%20Syria!5e0!3m2!1sen!2s!4v1632671788123!5m2!1sen!2s"
+            class="map-iframe"
+            allowfullscreen=""
+            loading="lazy"
+            title="خريطة موقع الشركة"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- شعار الشركة في الفوتر -->
+            <img
+              src="images/ips-logo.svg"
+              alt="IPS Logo"
+              class="footer-logo-image"
+            />
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>روابط سريعة</h4>
+              <a href="#home">الرئيسية</a>
+              <a href="#services">الخدمات</a>
+              <a href="#about">من نحن</a>
+              <a href="#projects">المشاريع</a>
+              <a href="#contact">تواصل معنا</a>
+            </div>
+            <div class="footer-links-column">
+              <h4>خدماتنا</h4>
+              <a href="#services">التيار الضعيف</a>
+              <a href="#services">الأمن الصناعي</a>
+              <a href="#services">التكييف والتبريد</a>
+              <a href="#services">الأعمال الكهربائية</a>
+            </div>
+            <div class="footer-links-column">
+              <h4>تواصل معنا</h4>
+              <p><i class="fas fa-phone"></i> ##</p>
+              <p><i class="fas fa-envelope"></i> ##</p>
+              <p><i class="fas fa-map-marker-alt"></i>حمص \ سوريا</p>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon" title="فيسبوك"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon" title="تويتر"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-icon" title="انستغرام"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-icon" title="لينكدإن"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <p class="footer-description">
+            شركة الأنظمة الاحترافية المتكاملة - حلول متكاملة في مجال الأمان
+            والتكنولوجيا
+          </p>
+          <div class="footer-copyright">
+            <p>© 2025 جميع الحقوق محفوظة - الأنظمة الاحترافية المتكاملة</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up" title="العودة للأعلى"></i>
+    </button>
+
+    <!-- البطاقة التعريفية للمنتجات (Modal) -->
+    <div class="modal-overlay" id="productModal">
+      <div class="product-modal">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalTitle">عنوان المنتج</h2>
+          <button class="modal-close" id="modalClose">
+            <i class="fas fa-times" title="إغلاق"></i>
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="صورة المنتج" />
+          </div>
+          <div class="modal-description">
+            <h3 id="modalSubtitle">وصف المنتج</h3>
+            <p id="modalDescription">تفاصيل المنتج والخدمة</p>
+            <h3>المميزات</h3>
+            <ul class="features-list" id="modalFeatures">
+              <!-- سيتم إضافة العناصر ديناميكياً -->
+            </ul>
+            <div class="modal-actions">
+              <button class="modal-btn primary-btn" id="requestQuoteBtn">
+                اطلب عرض سعر
+              </button>
+              <button class="modal-btn secondary-btn" id="moreInfoBtn">
+                المزيد من المعلومات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ربط ملفات JavaScript -->
+    <script src="products-data.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(
+            ".service-card, .about-card, .info-card, .project-card"
+          )
+          .forEach(function (el) {
+            el.classList.add("visible");
+          });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
